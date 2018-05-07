@@ -5,7 +5,7 @@
   "main": ": lib/server.js",
   "scripts": {
     "dev": "nodemon --exec babel-node  lib/server.js --watch",
-    "start":"webpack"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,6 @@
     ]
   },
   "homepage": "https://github.com/wasimkhan318/react-learning#readme",
-
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
@@ -38,7 +37,10 @@
     "eslint-plugin-react": "^7.7.0",
     "express": "^4.16.3",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
-    
+    "react-dom": "^16.3.2",
+    "webpack": "^4.7.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.3"
   }
 }
