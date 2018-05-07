@@ -4,7 +4,8 @@
   "description": "",
   "main": ": lib/server.js",
   "scripts": {
-    "start": "nodemon start lib/server.js --watch"
+    "start": "nodemon --exec babel-node  lib/server.js --watch",
+    "webpack":"webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -15,12 +16,29 @@
   "bugs": {
     "url": "https://github.com/wasimkhan318/react-learning/issues"
   },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
   "homepage": "https://github.com/wasimkhan318/react-learning#readme",
+
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "ejs": "^2.6.1",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+    
   }
 }
