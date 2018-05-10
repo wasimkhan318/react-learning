@@ -4,8 +4,8 @@
   "description": "",
   "main": ": lib/server.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node  lib/server.js --watch",
-    "start": "webpack"
+    "start": " webpack -d && nodemon --exec babel-node  lib/server.js --watch",
+    "webpack": "webpack -wd"
   },
   "repository": {
     "type": "git",
